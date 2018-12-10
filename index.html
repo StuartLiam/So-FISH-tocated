@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="FISH.css">
+
+	<link href="login.css" rel="stylesheet" type="text/css">
+	<script src="login.js"></script>
+  
+	<link href="register.css" rel="stylesheet" type="text/css">
+	<script src="register.js"></script>
+
+</head>
+<style>
+.boxBottom {
+top:180px;
+position:relative;
+display; inline-block;
+background-color:skyblue;
+
+}
+.boxRegRight {
+float:right;
+top:162px;
+position:relative;
+background-color:skyblue;
+}
+
+
+</style>
+<body>
+
+
+
+
+<div class = "bigContain">
+	<div class = "navContain">
+	  <div class = "inner">
+		<button class = "topButton topFlex">LOGO</button> 
+		<input id="input-field-id" type = "search" name="search" />
+		<button class = "topButton topFlex" id= "search">Search</button> 
+		<button class = "topButton topFlex" id="userLogin" onclick="checkLogin()">LOGIN</button> 
+		<button class = "topButton topFlex" id="userRegister" onclick="document.getElementById('myRegister').style.display='block'">REGISTER</button> 
+		<button class = "topButton topFlex" id="userProfile" onclick="checkProfile()">PROFILE</button> 
+	  </div>
+	</div>
+	<!--------<div class = "navContain">
+	  <div class = "inner">
+		<button class="flexButton topButton">CATAGORY1</button> 
+		<button class="flexButton topButton">CATAGORY2</button> 
+		<button class="flexButton topButton">CATAGORY3</button> 
+		<button class="flexButton topButton">CATAGORY4</button>
+	  </div>
+	</div>>-------->
+</div>
+
+
+
+
+<div class = "searchWrapper">
+
+<ul id = "set1">
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+</ul>
+
+
+
+
+
+
+
+
+<ul id = "set2">
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+
+
+</ul>
+
+
+<ul id = "set3">
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+</ul>
+
+<ul id = "set4">
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOOO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxPro">
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OOO</div>
+				<div class = "boxRegRight">$$$</div>
+
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button>tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+				<button>tag4</button>
+				<button>tag5</button>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class = "boxReg" >
+			
+			<div class = "inside" onclick="modalClick()" style="background-image: url(images/2.jpg)">
+				<div style = "background-color:white">Example Restaurant </div>
+				<div class = "boxBottom">OO</div>
+				<div class = "boxRegRight">$$$</div>
+			</div>
+			<div class = "tagWrap">&nbsp;
+				<button id = "tag">tag1</button>
+				<button>tag2</button>
+				<button>tag3</button>
+			</div>
+		</div>
+	</li>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="restaurantModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+
+	  <div class="relative">
+		<h1 style = "width:90%; margin-left:5%;">Example Restaurant</h1>
+		<img src="images/5.jpg" alt="404 map not found" style = "display: block; margin-left: auto; margin-right: auto; width: 95%;">
+		<div>&nbsp;</div>
+		<div style = "display:inline; margin:5px;"><a>Rating: OOO</a><a style="float:right">Price: $$</a></div>
+	  </div>
+	  <div class="relative2 tab" style = "left: 40%;">
+		<button class="tablinks" onclick="openTab(event, 'Info')" id="defaultOpen" >Info</button>
+		<button class="tablinks" onclick="openTab(event, 'Map')">Map</button>
+		<button class="tablinks" onclick="openTab(event, 'Reviews')">Reviews</button>
+		<button class="tablinks" onclick="openTab(event, 'Tags')">Tags</button>
+	  </div>
+	  
+	  
+	  <div id="Info" class="tabcontent relative" style = "left: 60%;">
+
+		<h3>67 Example Street</h3>
+		<h3>1 (204) 555 - 4351</h3>
+		<h3>Currently: Closed</h3>
+		<div class = "imageCenter">
+			<div>M 8am - 8pm</div>
+			<div>T 8am - 8pm</div>
+			<div>W 8am - 8pm</div>
+			<div>T 8am - 8pm</div>
+			<div>F 8am - 8pm</div>
+			<div>S 8am - 8pm</div>
+			<div>S 8am - 8pm</div>
+		</div>
+		<h3>Website</h3>
+		<h3>Menu</h3>
+	  </div>
+
+	  <div id="Map" class="tabcontent relative" style = "left: 60%;">
+		<h3>67 Example Street</h3>
+		<img src="images/map.jpg" alt="404 map not found" style = "display: block; margin-left: auto; margin-right: auto; width: 95%;">
+		<p>Paris is the capital of France.</p> 
+	  </div>
+
+	  <div id="Reviews" class="tabcontent relative" style = "left: 60%;">
+		<h3>FAVORITE RESTAURANTS</h3>
+		<div class = "inner" style = "height:250px; overflow: scroll; overflow-x: hidden; border: 5px solid skyblue;">
+
+			<div class="flexButton" style = "margin: 0.5em; width:90%;">
+				<div class="review-rate"><p>Rating: OOOO</p></div>
+				<div class="review-write"><p>Review: Im lovin it!</p></div>
+			</div>
+
+			<div class="flexButton" style = "margin: 0.5em; width:90%;">
+				<div class="review-rate"><p>Rating: O</p></div>
+				<div class="review-write"><p>Review: This place sucks!</p></div>
+			</div>
+
+			<div class="flexButton" style = "margin: 0.5em; width:90%;">
+					<div class="review-rate"><p>Rating: OOOO</p></div>
+					<div class="review-write"><p>Review: Im lovin it!</p></div>
+				</div>
+	
+				<div class="flexButton" style = "margin: 0.5em; width:90%;">
+					<div class="review-rate"><p>Rating: O</p></div>
+					<div class="review-write"><p>Review: This place sucks!</p></div>
+				</div>
+
+				<div class="flexButton" style = "margin: 0.5em; width:90%;">
+						<div class="review-rate"><p>Rating: OOOO</p></div>
+						<div class="review-write"><p>Review: Im lovin it!</p></div>
+					</div>
+		
+					<div class="flexButton" style = "margin: 0.5em; width:90%;">
+						<div class="review-rate"><p>Rating: O</p></div>
+						<div class="review-write"><p>Review: This place sucks!</p></div>
+					</div>
+
+					<div class="flexButton" style = "margin: 0.5em; width:90%;">
+							<div class="review-rate"><p>Rating: OOOO</p></div>
+							<div class="review-write"><p>Review: Im lovin it!</p></div>
+						</div>
+			
+						<div class="flexButton" style = "margin: 0.5em; width:90%;">
+							<div class="review-rate"><p>Rating: O</p></div>
+							<div class="review-write"><p>Review: This place sucks!</p></div>
+						</div>
+
+
+		</div>
+	  </div>
+	  
+	  <div id="Tags" class="tabcontent relative" style = "left: 60%; overflow: scroll; overflow-x: hidden;">
+		<h3>Restaurant Tags</h3>
+		<div class = "inner">
+			<button class = "flexButton" style = "margin: 0.5em">grill</button>
+			<button class = "flexButton" style = "margin: 0.5em">wings</button>
+			<button class = "flexButton" style = "margin: 0.5em">burger</button>
+			<button class = "flexButton" style = "margin: 0.5em">greek</button>
+			<button class = "flexButton" style = "margin: 0.5em">wine</button>
+			<button class = "flexButton" style = "margin: 0.5em">cheap</button>
+			<button class = "flexButton" style = "margin: 0.5em">pizza</button>
+			<button class = "flexButton" style = "margin: 0.5em">soup</button>
+			<button class = "flexButton" style = "margin: 0.5em">ribs</button>
+			<button class = "flexButton" style = "margin: 0.5em">cajun</button>
+			<button class = "flexButton" style = "margin: 0.5em">seafood</button>
+			<button class = "flexButton" style = "margin: 0.5em">sushi</button>
+			<button class = "flexButton" style = "margin: 0.5em">tapas</button>
+			<button class = "flexButton" style = "margin: 0.5em">deli</button>
+			<button class = "flexButton" style = "margin: 0.5em">diner</button>
+
+		</div>
+	  </div>
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Login modal page -->
+<div id="myLogin" class="user-login">
+  
+	<div class="modal-content animate">
+	  <div class="imgcontainer">
+		<span onclick="document.getElementById('myLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<img src="sofishticated.jpg" alt="Profile" class="Avatar">
+		<!-- sofishticated image should be replace with a copyright-free image -->
+	  </div>
+  
+	  <form class="container">
+		<!-- User name -->
+		<label for="uname"><b>Username</b></label>
+		<input id="userid" type="text" placeholder="Enter Username" name="uname" required>
+  
+		<!-- Passward -->
+		<label for="psw"><b>Password</b></label>
+		<input id="userpw" type="password" placeholder="Enter Password" name="psw" required>
+  
+		<!-- Login button -->
+		<button type="button" onclick="checkId()" type="submit">Login</button>
+  
+		<!-- Login by different account from other website? -->
+	  </form>
+  
+	  <div class="container" style="background-color:#f1f1f1">
+		<button type="button" onclick="document.getElementById('myLogin').style.display='none'" class="cancelbtn">Cancel</button>
+		<span class="psw"> Forgot <a href="#">password?</a></span>
+		<span class="psw"> No account? <a href="#">Sign-up!</a>  /  </span>
+	  </div>
+  
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Register modal page -->
+<div id="myRegister" class="user-Register">
+	  
+	  <div class="modal-content">
+		<div class="imgcontainer">
+		</div>
+  
+		<div class="container">
+		  <h1>REGISTER</h1>
+		  <p>Please fill in all sections below.</p>
+		  <hr>
+		  <!-- User name -->
+		  <label for="username"><b>User name</b></label>
+		  <input id="reg-username" type="text" placeholder="Enter username" name="username" required>
+		  <!-- Email -->
+		  <label for="email"><b>Email</b></label>
+		  <input id="reg-useremail" type="email" placeholder="Enter Email" name="email" required>
+		  <!-- Passward -->
+		  <label for="psw"><b>Password</b></label>
+		  <input id="reg-password" type="password" placeholder="Enter Password" name="psw" required>
+		  <!-- Repeat passward -->
+		  <label for="psw-repeat"><b>Confirm Password</b></label>
+		  <input id="reg-passwordRepeat" type="password" placeholder="Confirm Password" name="psw-repeat" required>
+		  <!-- Check boxes (1. remember me / 2. Receive newsletter..? / 3. etc) -->
+  
+		  <div class="clearfix">
+			<button type="button" onclick="document.getElementById('myRegister').style.display='none'" class="cancelbtn">Cancel</button>
+			<button type="submit" onclick="addAccount()" class="signupbtn">Register</button>
+		  </div>
+		</div>
+	  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PROFILE WINDOW -->
+<div id="myProfile" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+	  <div class="relative">
+		<img src="images/profile.jpg" alt="profile photo" class = "imageCenter slightlyDown">
+		<h3 style = "width:50%; margin-left: auto; margin-right: auto;">USERNAME</h3>
+		<p style = "width:90%; margin-left: auto; margin-right: auto;">Description:</p>
+		<p style = "width:90%; margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros libero,
+			semper fringilla erat fermentum, imperdiet fermentum dui.</p>
+		<button class = "topButton">Your Business</button>
+	  </div>
+	  <div class="relative2 tab" style = "left: 40%;">
+		<button class="tablinks" onclick="openTab(event, 'P1')" id="defaultOpen2">INFO</button>
+		<button class="tablinks" onclick="openTab(event, 'P2')">FAVORITE</button>
+		<button class="tablinks" onclick="openTab(event, 'P3')">REVIEWS</button>
+		<button class="tablinks" onclick="openTab(event, 'P4')">TAGS</button>
+	  </div>
+	  
+	  
+	  <div id="P1" class="tabcontent relative" style = "left: 60%;">
+		<h3>INFORMATION</h3>
+		<h5>Email: SampleEmail@email.com</h5>
+		<button class = "topButton" style = "margin:5px">Change Email</button>
+		<button class = "topButton" style = "margin:5px">Privacy policy</button>
+		<button class = "topButton" style = "margin:5px">Settings</button>
+		<button class = "topButton" style = "margin:5px">Clear Cashe</button>
+		
+		<p>London is the capital city of England.</p>
+	  </div>
+
+	  <div id="P2" class="tabcontent relative" style = "left: 60%;">
+		<h3>FAVORITE RESTAURANTS</h3>
+		<div class = "inner" style = "height:250px; overflow: scroll; overflow-x: hidden; border: 5px solid red;">
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+			<button class = "flexButton" style = "margin: 0.5em; width:90%;">EXAMPLE RESTAURANT</button>
+
+		</div>
+	  </div>
+
+	  <div id="P3" class="tabcontent relative" style = "left: 60%;">
+		<h3>YOUR REVIEWS</h3>
+		<p>Tokyo is the capital of Japan.</p>
+	  </div>
+	  
+	  <div id="P4" class="tabcontent relative" style = "left: 60%;">
+		<h3>YOUR COMMON TAGS</h3>
+		<button class = "topButton">Sort</button>
+		<div>-------------------</div>
+		<div class = "inner">
+			<button class = "flexButton" style = "margin: 0.5em">grill</button>
+			<button class = "flexButton" style = "margin: 0.5em">wings</button>
+			<button class = "flexButton" style = "margin: 0.5em">burger</button>
+			<button class = "flexButton" style = "margin: 0.5em">greek</button>
+			<button class = "flexButton" style = "margin: 0.5em">wine</button>
+			<button class = "flexButton" style = "margin: 0.5em">cheap</button>
+			<button class = "flexButton" style = "margin: 0.5em">pizza</button>
+			<button class = "flexButton" style = "margin: 0.5em">soup</button>
+			<button class = "flexButton" style = "margin: 0.5em">ribs</button>
+			<button class = "flexButton" style = "margin: 0.5em">cajun</button>
+			<button class = "flexButton" style = "margin: 0.5em">seafood</button>
+			<button class = "flexButton" style = "margin: 0.5em">sushi</button>
+			<button class = "flexButton" style = "margin: 0.5em">tapas</button>
+			<button class = "flexButton" style = "margin: 0.5em">deli</button>
+			<button class = "flexButton" style = "margin: 0.5em">diner</button>
+
+		</div>
+	  </div>
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<script src="jQuerry.js"></script>
+
+<script>
+
+var cycle = true;
+$(document).ready(function(){
+	var set1 = document.getElementById('set1');
+	var set2 = document.getElementById('set2');
+	var set3 = document.getElementById('set3');
+	var set4 = document.getElementById('set4');
+	$("#search").click(function(){
+		var count = 0;
+		var atleastOne = false;
+		tags.forEach(function(value){
+		if($('#input-field-id').val().toLowerCase().indexOf(value) >= 0 ){
+		count++
+		atleastOne = true
+			}
+		})
+
+
+        if(count<3 && atleastOne){
+		$('#input-field-id').val("");
+			if (cycle){
+			set1.style.display = "inline";
+			set2.style.display = "none";
+			set3.style.display = "none";
+			set4.style.display = "none";
+			
+			}
+			if (!cycle){
+			set1.style.display = "none";
+			set2.style.display = "inline";
+			set3.style.display = "none";
+			set4.style.display = "none";
+			}
+			cycle=!cycle;
+
+
+
+		}
+        
+        if(count>2){
+		$('#input-field-id').val("");
+			if (cycle){
+			set1.style.display = "none";
+			set2.style.display = "none";
+			set3.style.display = "inline";
+			set4.style.display = "none";
+			
+			}
+			if (!cycle){
+			set1.style.display = "none";
+			set2.style.display = "none";
+			set3.style.display = "none";
+			set4.style.display = "inline";
+			}
+			cycle=!cycle;
+		}
+    });
+		$("#hide").click(function(){
+        set1.style.display = "none";
+    });
+	var tags = ["african", "american", "arabic", "argentinian", "asian", "bar", "barbecue", "brazilian", "brew pub", "british", "café", "cajun", "creole", 
+	"cambodian", "canadian", "cantonese", "caribbean", "caucasian", "central american", "chinese", "contemporary", "danish", "deli", "diner", "dutch", "eastern european",
+	"ethiopian", "european", "fast food", "french", "fusion", "gastropub", "georgian", "greek", "grill", "guatemalan", "healthy", "hong kong", "indian", "irish", "israeli", 
+	"italian", "jamaican", "japanese", "korean", "latin", "lebanese", "malaysian", "mediterranean", "mexican", "middle eastern", "mongolian", "pakistani", "persian", "peruvian", 
+	"philippine", "pizza", "polish", "portuguese", "pub", "russian", "salvadoran", "scandinavian", "seafood", "shanghai", "soup", "south american", "southwestern", "spanish", "sri lankan", 
+	"steakhouse", "street food", "sushi", "swedish", "szechuan", "thai", "turkish", "ukrainian", "uzbek", "vietnamese", "wine", "baguette", "bangers and mash","burger" ,"beef bourguignon", 
+	"bento", "burrito", "cannelloni", "ceviche", "cheeseburger", "cheesecake", "chicken", "chicken wings", "chow mein", "corned beef", "crab", "dim sum", "dumplings", "falafel", 
+	"filet mignon", "fish", "chips", "fish taco", "french toast", "gyros", "hamburger", "hot dog", "hot pot", "ice cream", "lasagne", "lobster", "meatloaf", "moussaka", "noodle", 
+	"omelette", "oyster", "pad thai", "paella", "pancakes", "pasta", "polenta", "pork", "poutine", "ramen", "ribs", "roast beef", "salad", "sandwiches", "schnitzel", "shawarma", "shrimp",
+	"souvlaki", "steak", "surf and turf", "tandoori chicken", "tapas", "tempura", "tortillas", "udon", "soba", "waffles", "crepes", "curry","wing","cheap","expensive"]
+
+
+});
+
+
+
+
+
+
+
+
+
+
+// Get the modal
+var modal = document.getElementById('restaurantModal');
+var profileModal = document.getElementById('myProfile');
+var loginModal = document.getElementById('myLogin');
+var registerModal = document.getElementById('myRegister');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function modalClick() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+	if (event.target == profileModal) {
+    profileModal.style.display = "none";
+    }
+	if (event.target == loginModal) {
+    loginModal.style.display = "none";
+    }
+	if (event.target == registerModal) {
+    registerModal.style.display = "none";
+    }
+}
+
+
+
+
+function openTab(evt, tagID) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(tagID).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+// Get the element with id="defaultOpen" and click on it
+
+
+
+
+var images = ['2.pg', '3.png', '5.png'];
+</script>
+<script> src="jQuerry.js"></script>
+</body>
+</html>

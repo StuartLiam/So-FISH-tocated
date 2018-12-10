@@ -1,0 +1,435 @@
+.navContain {
+  background: honeydew;
+  margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+ 
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[type="search"] {
+  border: none;
+  white-space: wrap;
+  border-radius: 5px 5px 5px 5px;
+	background: #E9E9E9;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	line-height: normal;
+	max-height: 3em;
+  
+  flex: 2 0 250px;
+}
+
+input[type="search"]:focus {
+  background: skyblue;
+  color: white;
+  letter-spacing: .1em;
+  transition: background 400ms ease-in-out;
+  outline: none;
+}
+
+.topFlex{flex: 0.1 0 10px;}
+
+.topButton {
+  
+  
+  max-height: 3em;
+  font-size: 1.1em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  border-radius: 5px 5px 5px 5px;
+	background: silver;
+  color: white;
+  border: none;
+  padding: 0.35em 0.75em;
+  margin-left:0.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+
+}
+.topButton:hover {
+  background: skyblue;
+}
+
+@media (max-width: 450px) {
+  body {
+    width: 100%;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+.flexButton  {
+    cursor: pointer;
+    flex: 1 0 10px;
+    background-color: rgb(128, 180, 209); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+
+div.boxReg {
+    background-color: white;
+    width: 200px;
+	height: 250px;
+    border: 5px solid skyblue;
+	display:inline-block;
+	margin: 5px;
+}
+
+div.boxReg:hover {border: 5px solid grey;}
+
+div.inside {
+	z-index:1;
+	width:100%;
+	height:90%;
+}
+div.tagWrap {
+	background-color: skyblue;
+	z-index:1;
+	width:100%;
+	height:10%;
+}
+
+div.boxPro {
+    background-color: white;
+    width: 415px;
+	height: 250px;
+    border: 5px solid skyblue;
+	display:inline-block;
+	margin: 5px;
+}
+div.boxPro:hover {border: 5px solid grey;}
+
+}
+
+ul.searchWrap { list-style-type: none;}
+
+.searchWrapper {
+width:95%;
+margin-left:5%;
+}
+
+li{display:inline;}
+
+
+
+
+
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.slightlyDown{	top:15px;
+	position: relative;}
+
+
+
+
+
+
+
+
+
+div.relative {
+    position: absolute;
+	display: inline-block;
+    width: 40%;
+    height: 400px;
+    background:honeydew;
+	}
+div.relative2 {
+    position: absolute;
+	display: flex;
+	flex-direction: column;
+    width: 20%;
+    height: 400px;
+    background:honeydew;
+	}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: relative;
+	left:200px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+	flex-grow: 1;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: skyblue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Full-width input fields */
+.user-login input[type=text], 
+.user-login input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.user-login button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+/* becomes a little transparent when a mouse is hovered on a button */
+.user-login button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.user-login .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.user-login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.user-login img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.user-login .container {
+    padding: 30px;
+}
+
+.user-login span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.user-login {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.user-login .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    position: relative; /* the size becomes relative to the modal (background)*/
+}
+
+/* The Close Button (x) */
+.imgcontainer .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.imgcontainer .close:hover,
+.imgcontainer .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.imgcontainer .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .user-login span.psw {
+       display: block;
+       float: none;
+    }
+    .user-login .cancelbtn {
+       width: 100%;
+    }
+}
